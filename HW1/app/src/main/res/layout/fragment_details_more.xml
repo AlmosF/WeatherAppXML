@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".details.DetailsMoreFragment">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/curvycorner"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+
+            <ImageView
+                android:id="@+id/pressureImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_barometer"
+                app:tint="@color/tanAccent" />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/pressure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                tools:text="1001 hPa"
+                android:textColor="@color/tanAccent"
+                app:layout_constraintTop_toBottomOf="@+id/humidity"
+                tools:layout_editor_absoluteX="16dp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/humidityImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_humidity"
+                app:tint="@color/tanAccent" />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/humidity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                tools:text="80%"
+                android:textColor="@color/tanAccent"
+                app:layout_constraintTop_toBottomOf="@+id/windD"
+                tools:layout_editor_absoluteX="16dp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/windImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_wind"
+                app:tint="@color/tanAccent" />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/wind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                tools:text="WindS"
+                android:textColor="@color/tanAccent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="16dp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/windDirImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_winddir"
+                app:tint="@color/tanAccent" />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:id="@id/windD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                tools:text="300°"
+                android:textColor="@color/tanAccent"
+                app:layout_constraintTop_toBottomOf="@+id/wind"
+                app:layout_editor_absoluteX="16dp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/seaLevelImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_sealevel"
+                app:tint="@color/tanAccent" />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/seaLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                tools:text="seaLevel"
+                android:textColor="@color/tanAccent"
+                app:layout_constraintTop_toBottomOf="@+id/pressure"
+                app:layout_editor_absoluteX="16dp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/groundLevelImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_groundlevel"
+                app:tint="@color/tanAccent" />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/groundLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                tools:text="groundLevel"
+                android:textColor="@color/tanAccent"
+                app:layout_constraintTop_toBottomOf="@+id/seaLevel"
+                app:layout_editor_absoluteX="16dp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/visibilityImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_cloud"
+                app:tint="@color/tanAccent" />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/cloud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                tools:text="cloud"
+                android:textColor="@color/tanAccent"
+                app:layout_constraintTop_toBottomOf="@+id/groundLevel"
+                app:layout_editor_absoluteX="16dp" />
+        </TableRow>
+
+
+    </TableLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curvycorner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+
+
+        <TextView
+            android:id="@+id/sunRiseTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            tools:text="7:00"
+            android:textColor="@color/tanAccent"
+            app:layout_constraintEnd_toEndOf="@+id/sunRiseTV"
+            app:layout_constraintStart_toStartOf="@+id/sunRiseTV"
+            app:layout_constraintTop_toBottomOf="@+id/sunRiseTV" />
+
+        <TextView
+            android:id="@+id/sunRiseTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/sunrise"
+            android:textColor="@color/tanAccent"
+            app:layout_constraintEnd_toStartOf="@+id/SunsetTV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/sunSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:src="@mipmap/ic_sunset"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/SunsetTV"
+            app:layout_constraintStart_toStartOf="@+id/SunsetTV"
+            app:layout_constraintTop_toBottomOf="@+id/sunSetTime" />
+
+        <TextView
+            android:id="@+id/sunSetTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            tools:text="7:00"
+            android:textColor="@color/tanAccent"
+            app:layout_constraintEnd_toEndOf="@+id/SunsetTV"
+            app:layout_constraintStart_toStartOf="@+id/SunsetTV"
+            app:layout_constraintTop_toBottomOf="@+id/SunsetTV" />
+
+        <TextView
+            android:id="@+id/SunsetTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/sunset"
+            android:textColor="@color/tanAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sunRiseTV"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/SunRise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:src="@mipmap/ic_sunrise"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/sunRiseTV"
+            app:layout_constraintStart_toStartOf="@+id/sunRiseTV"
+            app:layout_constraintTop_toBottomOf="@+id/sunRiseTime" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

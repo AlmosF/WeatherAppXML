@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">HW1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="cityName">Budapest</string>
+    <string name="countryName">Hungary</string>
+    <string name="delete">Delete</string>
+    <string name="metric">Metric</string>
+    <string name="unit">Unit</string>
+    <string name="farenheit">%.1f°F</string>
+    <string name="celsius">%.1f°C</string>
+    <string name="maxminfeelslikeC">%.1f°C / %.1f°C Feels Like %.1f°C</string>
+    <string name="maxminfeelslikeF">%.1f°F / %.1f°F Feels Like %.1f°F</string>
+    <string name="maxminC">%.1f°C / %.1f°C</string>
+    <string name="maxminF">%.1f°F / %.1f°F</string>
+
+    <string name="minimum_temp">Minimum temp :</string>
+    <string name="maximum_temp">Maximum temp :</string>
+    <string name="feels_like">Feels Like :</string>
+    <string name="temperature">Temperature :</string>
+    <string name="animations">Animations</string>
+
+    <string name="sunrise">Sunrise</string>
+
+    <string name="sunset">Sunset</string>
+
+    <string name="windspeedM">%.1fm/s</string>
+    <string name="windSpeedI">%.1fmi/h</string>
+    <string name="windDeg">%.1f°</string>
+    <string name="clouds">%d%%</string>
+    <string name="pressure">%.1f hPa</string>
+    <string name="humidity">%.0f%%</string>
+    <string name="cloudiness">%d%%</string>
+</resources>
